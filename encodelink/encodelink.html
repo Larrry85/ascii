@@ -1,0 +1,53 @@
+<!-- encodelink.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css"><!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"><!-- cursive font -->
+    
+    <title>*** ACSII Art Converter ***</title><!-- title showing in web browser tab -->
+</head>
+<body>
+    <header><!-- header where the pics are -->
+        <h1><img class="image" src="../pics/encodepic.png" alt="EncodeArt"></h1>
+    </header>
+    <nav>
+        <ul><!-- navigation links -->
+            <li><a href="/decodelink/decodelink.html">Decode ASCII art</a></li> <!--calls handleDecodeLink()-->
+            <li><a href="/encodelink/encodelink.html">Encode ASCII art</a></li><!--calls handleEncodeLink()-->
+            <li><a><em>(Coming soon...)</em> Create images from text</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container"><!--container box-->
+            <section>
+
+            <form action="/encoder" method="POST"><!-- calls the /encoder-->
+                <label for="encodeInputString">Please enter art here:</label><br>
+                    <!--user input-->
+                    <textarea id="encodeInputString" name="encodeInputString"></textarea><br>
+                    <button type="submit" value="Submit">ENCODE</button><br><!--calls handleEncoder()-->
+            </form>
+                    <textarea id="encodeResult" name="encodeResult">{{.ResultString}}</textarea><!-- where converter result appears from renderTemplate -->
+            </section>
+
+             <div>     
+                <p style="color: grey;">Status: {{.StatusPhrase}}</p><!-- where converter acsii art appears from renderTemplate -->
+                <p style="color: grey;">Status Code: {{.StatusCode}}</p><!-- where converter acsii art appears from renderTemplate -->
+            </div>
+
+        </div><!--container box END-->  
+
+                <div>
+                    <p style="font-family: 'Great Vibes', cursive;; font-size: 24px;">Thanks for converting art with me!</p><!-- cursive font -->
+                </div>
+         <br><br>      
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Laura's Page</p>
+    </footer>
+</body>
+</html>

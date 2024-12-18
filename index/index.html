@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css"><!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"><!-- cursive font -->
+    
+    <title>*** ACSII Art Converter ***</title><!-- title showing in web browser tab -->
+</head>
+<body>
+    <header><!-- header where the pics are -->
+        <h1><img class="image" src="../pics/artinterfacepic.png" src="../pics/artinterfacepic.png" alt="Art Interface"></h1>
+    </header>
+    <nav>
+        <ul><!-- navigation links -->
+            <li><a href="/decodelink/decodelink.html">Decode ASCII art</a></li>
+            <li><a href="/encodelink/encodelink.html">Encode ASCII art</a></li>
+            <li><a><em>(Coming soon...)</em> Create images from text</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container"><!--container box-->
+            <div style="font-family: 'Great Vibes', cursive;; font-size: 50px;">Welcome !</div><!-- cursive font -->
+       
+            <div>        
+                <p  style="color: grey;">Status: {{.StatusPhrase}}</p><!-- status phrase from renderTemplate -->
+                <p  style="color: grey;">Status Code: {{.StatusCode}}</p><!-- status code from renderTemplate -->
+            </div>
+       
+        <div><!--container box END-->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Laura's Page</p>
+    </footer>
+</body>
+</html>

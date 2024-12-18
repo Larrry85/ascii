@@ -1,0 +1,116 @@
+    /* styles.css */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        /* cursive font */
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f8c7fa;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {    /* heading */
+        text-align: center;
+        color: #333;
+        color: purple;
+    }
+
+    header {    /* header where the pics are */
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+
+    }
+    nav ul li a {    /* navigation links */
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav ul li a:hover {    /* when mouse is over the links */
+        font-weight: bold;
+      }
+
+    .container {    /* container box */
+        min-width: 90%; 
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8dffd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    form {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    label {    /* Reset some default styles */
+        font-weight: bold;
+        display: block;
+    }
+
+    textarea {    /* where the ascii art goes */
+        min-width: calc(100ch - 20px); 
+        padding: 8px;
+        margin-bottom: 10px;
+        height: auto;
+        min-height: 25em;
+        max-width: 100%;
+        resize: vertical;
+    }
+
+    #decodeResult {    /* where converter acsii art appears from renderTemplate */
+        min-width: calc(100ch - 20px); 
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: left;
+
+    }
+    #encodeResult {    /* where converter acsii art appears from renderTemplate */
+        min-width: calc(100ch - 20px); 
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: left;
+
+    }
+
+    button {
+        padding: 8px 20px;
+        background-color: #b769d6;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+       
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
