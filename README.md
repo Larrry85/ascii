@@ -72,6 +72,9 @@ art/
 └── README.md                
 ```
 
+
+![Encode and decode](ascii.png)
+
 ### Coder
 
 Laura Levistö 5/24
