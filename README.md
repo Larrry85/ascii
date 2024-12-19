@@ -1,6 +1,6 @@
 # Art Interface
 
-This is my third task: Converting ASCII art in web browser and styling the page with CSS.
+This is my third task: Converting ASCII art in webbrowser and styling the page with CSS.
 
 
 ## How To Use
